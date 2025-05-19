@@ -1,0 +1,189 @@
+/* Container */
+.formContainer {
+  max-width: 480px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #222;
+}
+
+/* Heading */
+.heading {
+  font-weight: 600;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: #1a1a1a;
+  letter-spacing: 0.03em;
+}
+
+/* Error message */
+.errorMessage {
+  text-align: center;
+  color: #e63946;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Form Group */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+}
+
+/* Labels */
+.label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.45rem;
+  color: #444;
+}
+
+/* Inputs & Textarea & Select */
+.input,
+.select,
+.textarea {
+  padding: 0.55rem 0.8rem;
+  font-size: 1rem;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  font-family: inherit;
+  color: #222;
+  box-sizing: border-box;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #3b82f6; /* Tailwind blue-500 */
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.45);
+}
+
+/* Textarea */
+.textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* Button */
+.button {
+  width: 100%;
+  padding: 0.75rem 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.35s ease, transform 0.15s ease;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+  user-select: none;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .formContainer {
+    margin: 2rem 1rem;
+    padding: 1.5rem 1.75rem;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+}
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #d9534f;
+  margin-bottom: 16px;
+}

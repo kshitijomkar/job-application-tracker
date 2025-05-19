@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.job-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.job-item:last-child {
+  border-bottom: none;
+}
+
+.job-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #222;
+}
+
+.job-company {
+  color: #555;
+}
+
+.job-status {
+  font-style: italic;
+  color: #777;
+}
+
+button.edit-btn {
+  background-color: #28a745;
+  margin-left: 10px;
+}
+
+button.edit-btn:hover {
+  background-color: #1e7e34;
+}
+
+button.logout-btn {
+  float: right;
+  background-color: #dc3545;
+}
+
+button.logout-btn:hover {
+  background-color: #c82333;
+}

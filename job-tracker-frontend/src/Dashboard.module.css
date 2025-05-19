@@ -1,0 +1,186 @@
+.dashboard {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.primaryBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+.primaryBtn:hover {
+  background-color: #0056b3;
+}
+
+.secondaryBtn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.secondaryBtn:hover {
+  background-color: #ddd;
+}
+
+.empty {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #777;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.jobGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.jobCard {
+  background-color: #ffffff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.jobTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.companyName {
+  margin: 0.4rem 0 1rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.editBtn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.editBtn:hover {
+  background-color: #e0a800;
+}
+
+.deleteBtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #c82333;
+}
+
+/* Status badge styles */
+.status {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.applied {
+  background-color: #e0f0ff;
+  color: #007bff;
+}
+
+.interviewscheduled {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.accepted {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .cardActions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .editBtn,
+  .deleteBtn {
+    width: 100%;
+  }
+}

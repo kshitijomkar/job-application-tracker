@@ -1,0 +1,147 @@
+/* Container */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #222;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Navbar */
+.landing-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background: #2563eb;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.landing-nav button {
+  margin-left: 1rem;
+}
+
+/* Hero Section */
+.landing-hero {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 180px;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 2px 3px rgba(37, 99, 235, 0.3));
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e40af;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.hero-buttons .btn {
+  margin: 0 0.6rem;
+  min-width: 140px;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0.75rem 1.8rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #2563eb;
+  border-color: #2563eb;
+}
+
+.btn-outline:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Footer */
+.landing-footer {
+  padding: 1rem 3rem;
+  text-align: center;
+  background: #e0e7ff;
+  color: #1e40af;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .landing-hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .landing-nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .landing-footer {
+    padding: 1rem 1.5rem;
+  }
+}
