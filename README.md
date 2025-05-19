@@ -39,11 +39,6 @@ jt/
 ├── styles.css
 └── other supporting files
 
-yaml
-Copy
-Edit
-
----
 
 ## 🚀 Getting Started
 
@@ -53,36 +48,57 @@ Edit
 - npm
 - MongoDB Atlas account
 
-### 📦 Backend Setup
+### Backend Setup
+
+1. Navigate to the `backend` folder:
 
 ```bash
 cd backend
-npm install
-Create a .env file in backend/ with:
+```
+2. Install dependencies:
 
-ini
-Copy
-Edit
-MONGO_URI=your_mongo_uri
-JWT_SECRET=your_jwt_secret
+```bash
+npm install
+```
+3. Create a .env file in the backend folder with the following variables:
+
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret_key
 PORT=5000
-Start the server:
 
-bash
-Copy
-Edit
+4. Start the backend server
+
+```bash
 npm start
-🎨 Frontend Setup
-bash
-Copy
-Edit
+```
+
+### Frontend Setup
+
+1. Navigate to the job-tracker-frontend folder:
+
+```bash
 cd job-tracker-frontend
-npm install
-npm start
-Frontend will run on http://localhost:3000.
+```
 
-🛠 Technologies Used
-MongoDB + Mongoose
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the React app:
+
+```bash
+npm start
+```
+
+The frontend will run on http://localhost:3000.
+
+   
+
+## 🛠 Technologies Used
+
+MongoDB & Mongoose
 
 Express.js
 
@@ -90,12 +106,14 @@ React.js
 
 Node.js
 
-JWT (Authentication)
+JWT for authentication
 
-CSS Modules + Custom Styling
+CSS for styling
 
-🌍 Deployment (Optional)
-Backend (Render)
+## 🌍 Deployment (Optional)
+
+### Backend (Render)
+
 Create a new Web Service
 
 Connect your GitHub repo
@@ -106,7 +124,8 @@ Build Command: npm install
 
 Start Command: npm start
 
-Frontend (Vercel)
+### Frontend (Vercel)
+
 Import the frontend folder as a new project
 
 Set environment variables if needed
