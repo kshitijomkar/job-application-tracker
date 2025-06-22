@@ -16,29 +16,29 @@ An AI-powered job application tracker and career guidance platform built with th
 ## 📁 Project Structure
 
 jt/
-├── backend/
-│ ├── config/
-│ │ └── db.js
-│ ├── middleware/
-│ │ └── authMiddleware.js
-│ ├── models/
-│ │ ├── jobs.js
-│ │ └── user.js
-│ ├── routes/
-│ │ ├── auth.js
-│ │ └── jobs.js
-│ └── server.js
-└── job-tracker-frontend/
-└── src/
-├── AddJob.js
-├── App.js
-├── Dashboard.js
-├── EditJob.js
-├── Login.js
-├── Register.js
-├── styles.css
-└── other supporting files
-
+├── backend/<br>
+│ ├── config/<br>
+│ │ └── db.js<br>
+│ ├── middleware/<br>
+│ │ └── authMiddleware.js<br>
+│ ├── models/<br>
+│ │ ├── jobs.js<br>
+│ │ └── user.js<br>
+│ ├── routes/<br>
+│ │ ├── auth.js<br>
+│ │ └── jobs.js<br>
+│ └── server.js<br>
+└── job-tracker-frontend/<br>
+└── src/<br>
+├── AddJob.js<br>
+├── App.js<br>
+├── Dashboard.js<br>
+├── EditJob.js<br>
+├── Login.js<br>
+├── Register.js<br>
+├── styles.css<br>
+└── other supporting files<br>
+<br>
 
 ## 🚀 Getting Started
 
