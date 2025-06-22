@@ -15,7 +15,7 @@ An AI-powered job application tracker and career guidance platform built with th
 
 ## 📁 Project Structure
 
-jt/
+jt/<br>
 ├── backend/<br>
 │ ├── config/<br>
 │ │ └── db.js<br>
